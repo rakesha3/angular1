@@ -1,0 +1,12 @@
+<p *ngFor="let serverElement of servers" >
+  {{serverElement.name}}
+</p>
+
+<hr>
+<input type="text" class="form-control" [(ngModel)]="serverName" placeholder="Server Name">
+<input type="text" class="form-control" [(ngModel)]="serverType" placeholder="Server Type">
+<button class="btn btn-primary" (click)="OnServerAdded()">Add Server</button>
+<p>
+  selected header is {{header.name}}
+</p>
+<p>This is {{serverName}}</p>
